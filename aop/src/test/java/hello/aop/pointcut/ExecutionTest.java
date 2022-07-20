@@ -1,6 +1,6 @@
 package hello.aop.pointcut;
 
-import hello.aop.member.annotation.MemberServiceImpl;
+import hello.aop.member.MemberServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,7 @@ public class ExecutionTest {
     @Test
     void printMethod(){
         //AspectJExpression 표현식이랑 같다
-        //public java.lang.String hello.aop.member.annotation.MemberServiceImpl.hello(java.lang.String)
+        //public java.lang.String hello.aop.member.MemberServiceImpl.hello(java.lang.String)
         log.info("helloMethod={}", helloMethod);
     }
 }
